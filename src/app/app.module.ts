@@ -4,10 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MainPageComponent } from './main-page/main-page.component';
+import { RestaurantPageComponent } from './restaurant-page/restaurant-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainPageComponent,
+    RestaurantPageComponent
   ],
   imports: [
     BrowserModule,
