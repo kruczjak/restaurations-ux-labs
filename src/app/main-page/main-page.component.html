@@ -1,3 +1,45 @@
-<p>
-  main-page works!
-</p>
+<div class="card" style="margin-top: 10px">
+  <div class="card-body">
+    <div class="container">
+      Filters
+    </div>
+  </div>
+</div>
+
+<ng-container *ngFor="let i of [0,1]">
+  <div class="card border-light" style="cursor: pointer; margin-top: 10px" [routerLink]="['.', 'restaurant']">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2">
+          <img height="100px" src="/assets/images/r1.jpg">
+        </div>
+        <div class="col-5">
+          <div class="row">
+            <h2>Restauracja staropolska</h2>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span>Niezapomniane polskie smaki. Promocja dla nowych klientów!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card border-light" style="margin-top: 10px; cursor: pointer" [routerLink]="['.', 'restaurant']">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-2">
+          <img height="100px" src="/assets/images/r2.jpg">
+        </div>
+        <div class="col-5">
+          <div class="row">
+            <h2>Restauracja nowopolska</h2>
+          </div>
+          <div class="row" style="margin-top: 7px">
+            <span>Odkryj polską kuchnię na nowo.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
