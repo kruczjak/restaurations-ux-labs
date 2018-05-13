@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RestaurantPageComponent } from './restaurant-page/restaurant-page.component';
 import { IconComponent } from './icon/icon.component';
+import { RestaurantElementComponent } from './restaurant-element/restaurant-element.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { IconComponent } from './icon/icon.component';
     MainPageComponent,
     RestaurantPageComponent,
     IconComponent,
+    RestaurantElementComponent,
   ],
   imports: [
     BrowserModule,

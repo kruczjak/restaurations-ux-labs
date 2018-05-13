@@ -1,0 +1,17 @@
+<div class="card" style="cursor: pointer; margin-top: 10px" [routerLink]="['.', 'restaurant']" [@hover]="state">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-2">
+        <img height="100px" [src]="imageUrl">
+      </div>
+      <div class="col-5">
+        <div class="row">
+          <h2>{{ restaurantName }}</h2>
+        </div>
+        <div class="row" style="margin-top: 7px">
+          <span>{{ restaurantDescription }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
