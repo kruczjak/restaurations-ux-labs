@@ -4,13 +4,16 @@
       <div class="col-2">
         <img height="100px" [src]="imageUrl">
       </div>
-      <div class="col-5">
+      <div class="col-9">
         <div class="row">
           <h2>{{ restaurantName }}</h2>
         </div>
         <div class="row" style="margin-top: 7px">
           <span>{{ restaurantDescription }}</span>
         </div>
+      </div>
+      <div class="col-1 align-self-center" *ngIf="loved" style="font-size: 150%">
+        <app-icon icon="heart"></app-icon>
       </div>
     </div>
   </div>

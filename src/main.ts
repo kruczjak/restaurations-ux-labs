@@ -9,9 +9,10 @@ import {
   faEnvelope, faCircle, faUser, faSort, faDollarSign, faFire, faStar, faRuler, faPhone,
 } from '@fortawesome/fontawesome-free-solid';
 import * as faRegularStar from '@fortawesome/fontawesome-free-regular/faStar';
+import { faHeart } from '@fortawesome/fontawesome-free-regular';
 // add here needed icons
 fontawesome.library.add(
-  faUser, faCircle, faSort, faDollarSign, faFire, faStar, faRuler, faEnvelope, faPhone, faRegularStar
+  faUser, faCircle, faSort, faDollarSign, faFire, faStar, faRuler, faEnvelope, faPhone, faRegularStar, faHeart,
 );
 
 

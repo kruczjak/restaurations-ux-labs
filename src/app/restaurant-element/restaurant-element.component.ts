@@ -20,6 +20,7 @@ export class RestaurantElementComponent {
   @Input() public imageUrl: string;
   @Input() public restaurantName: string;
   @Input() public restaurantDescription: string;
+  @Input() public loved = false;
   public state = 'out';
 
   @HostListener('mouseenter', ['$event'])
