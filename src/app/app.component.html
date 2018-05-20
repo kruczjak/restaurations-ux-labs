@@ -1,16 +1,17 @@
 <div class="container" style="margin-bottom: 25px">
-    <div class="card" style="margin-top: 10px">
-        <div class="card-body">
-            <div class="container">
-                <div class="float-lg-left">
-                    LOGOLOGOLOGO
+    <div class="card" style="margin-top: 10px" [routerLink]="['/']">
+        <div class="card-body card-navigation-body">
+            <div class="row">
+                <div class="col-2">
+                    <img src="assets/images/logo.png" width="150px">
                 </div>
 
-                <div>
+                <div class="col-6 align-self-center">
                     <h2>Dobre Restauracje</h2>
                 </div>
-                <div class="float-lg-right">
-                    <div ngbDropdown class="d-inline-block">
+
+                <div class="col-4 align-self-center float-right">
+                    <div ngbDropdown class="d-inline-block float-right" (click)="$event.stopPropagation()">
                         <div ngbDropdownToggle style="cursor: pointer;">
                             <span style="margin-right: 16px">Paulina</span>
                             <span class="fa-layers">

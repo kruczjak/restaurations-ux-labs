@@ -1,7 +1,23 @@
 <div class="card" style="margin-top: 10px">
   <div class="card-body">
     <div class="row">
-      <div class="col-3"></div>
+      <div class="col-3">
+        <div ngbDropdown class="d-inline-block" style="width: 100%">
+          <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle style="width: 100%">
+            {{ selectedKitchen }}
+          </button>
+
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic2" style="width: 100%">
+            <button *ngFor="let kitchen of allKitchens"
+                    class="dropdown-item"
+                    (click)="selectedKitchen = kitchen"
+                    [class.bg-light]="selectedKitchen === kitchen">
+              {{ kitchen }}
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--#################################################################################-->
       <div class="col-6">
         <form>
           <div class="form-group">
@@ -17,6 +33,7 @@
           </div>
         </form>
       </div>
+      <!--#################################################################################-->
       <div class="col-3">
         <div ngbDropdown class="d-inline-block" style="width: 100%">
           <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle style="width: 100%">

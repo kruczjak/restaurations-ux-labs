@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
   public selectedSort = 'Popularność';
+  public allKitchens = ['Wszystkie typy kuchni', 'Włoskie', 'Chińskie', 'Pizza', 'Amerykańskie', 'Polskie'];
+  public selectedKitchen = 'Wszystkie typy kuchni';
   constructor() { }
 
   ngOnInit() {
