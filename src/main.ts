@@ -5,10 +5,14 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import fontawesome from '@fortawesome/fontawesome';
-import { faCircle, faUser } from '@fortawesome/fontawesome-free-regular';
-
+import {
+  faEnvelope, faCircle, faUser, faSort, faDollarSign, faFire, faStar, faRuler, faPhone,
+} from '@fortawesome/fontawesome-free-solid';
+import * as faRegularStar from '@fortawesome/fontawesome-free-regular/faStar';
 // add here needed icons
-fontawesome.library.add(faUser, faCircle);
+fontawesome.library.add(
+  faUser, faCircle, faSort, faDollarSign, faFire, faStar, faRuler, faEnvelope, faPhone, faRegularStar
+);
 
 
 if (environment.production) {

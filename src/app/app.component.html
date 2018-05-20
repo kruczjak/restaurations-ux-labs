@@ -1,14 +1,33 @@
-<div class="container">
+<div class="container" style="margin-bottom: 25px">
     <div class="card" style="margin-top: 10px">
         <div class="card-body">
             <div class="container">
-                FOCIA
+                <div class="float-lg-left">
+                    LOGOLOGOLOGO
+                </div>
+
+                <div>
+                    <h2>Dobre Restauracje</h2>
+                </div>
                 <div class="float-lg-right">
-                    <span style="margin-right: 16px">Paulina</span>
-                    <span class="fa-layers">
-                        <app-icon icon="circle" transform="grow-25 right-4"></app-icon>
-                        <app-icon icon="user" class="fa-lg" transform="shrink-3"></app-icon>
-                    </span>
+                    <div ngbDropdown class="d-inline-block">
+                        <div ngbDropdownToggle style="cursor: pointer;">
+                            <span style="margin-right: 16px">Paulina</span>
+                            <span class="fa-layers">
+                                <app-icon icon="circle" transform="grow-25 right-4"></app-icon>
+                                <app-icon icon="user" class="fa-lg" transform="shrink-3" style="color: white"></app-icon>
+                            </span>
+                        </div>
+
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="width: 100%">
+                            <button class="dropdown-item">
+                                Mój profil
+                            </button>
+                            <button class="dropdown-item">
+                                Wyloguj
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

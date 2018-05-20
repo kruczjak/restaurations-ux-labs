@@ -1,3 +1,67 @@
-<p>
-  restaurant-page works!
-</p>
+<div class="card" style="margin-top: 10px">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-12">
+        <img src="assets/images/r1-horizontal.jpg" style="width: 100%; object-fit: cover;"/>
+
+        <div class="bottom-right">
+          <p class="text-block" style="padding: 7px">
+            <span style="font-size: 35px;"><b>Restauracja staropolska</b></span>
+          </p>
+        </div>
+
+        <div class="bottom-left">
+          <div class="text-block" style="padding: 7px">
+            <div>
+              <span>ul. Restauracyjna 12</span>
+              <br />
+              <span>Kraków</span>
+              <br />
+              <span>
+                <app-icon icon="phone"></app-icon> 9112341234 <app-icon icon="envelope"></app-icon> restauracja@star.pl
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul class="nav nav-tabs" style="margin-top: 15px">
+  <li class="nav-item">
+    <a class="nav-link active" [routerLink]="['.']">Menu</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['.']">Opinie</a>
+  </li>
+</ul>
+
+<app-food-element imageUrl="assets/images/f1.jpg"
+                  imageBy="By Dmitry Dzema - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=41431792"
+                  foodName="Schabowy"
+                  foodDescription="Tradycyjny polski schabowy. Podawany z ziemniakami."
+                  price="15zł"
+                  [rating]="">
+</app-food-element>
+<app-food-element imageUrl="assets/images/f2.jpeg"
+                  imageBy="By Silar - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=13294189"
+                  foodName="Kotlety mielone"
+                  foodDescription="Soczyste kotlety mielone z surówką."
+                  price="20zł"
+                  [rating]="5">
+</app-food-element>
+<app-food-element imageUrl="assets/images/f3.jpg"
+                  imageBy="By Alberto Racatumba from Spain / España - Kraków XXIX - Rynek Glowny, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=4305489"
+                  foodName="Tradycyjny bigos"
+                  foodDescription="Pyszny i pachnący bigos w chlebie."
+                  price="10zł"
+                  [rating]="">
+</app-food-element>
+<app-food-element imageUrl="assets/images/f4.jpg"
+                  imageBy="By Cezary p at Polish Wikipedia, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=8305045"
+                  foodName="Kiełbaski z grilla"
+                  foodDescription="Ciepłe i pachnące kiełbaski z grilla."
+                  price="9zł"
+                  [rating]="3">
+</app-food-element>

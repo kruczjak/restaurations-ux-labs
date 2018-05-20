@@ -19,7 +19,7 @@ export class IconComponent implements OnInit {
   @Input() public set symbol(val: fontawesome.FaSymbol) { this._symbol = val; this.checkAndHandleNewDefinition(); }
   public content: SafeHtml;
   private _icon: fontawesome.IconName;
-  private _prefix: fontawesome.IconPrefix = 'far';
+  private _prefix: fontawesome.IconPrefix = 'fas';
   private _classes: string[] = [];
   private _transform: string;
   private _mask: fontawesome.IconName;

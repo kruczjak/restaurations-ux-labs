@@ -1,7 +1,45 @@
 <div class="card" style="margin-top: 10px">
   <div class="card-body">
-    <div class="container">
-      Filters
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <form>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend"><app-icon icon="search"></app-icon></span>
+              </div>
+              <input type="text"
+                     class="form-control"
+                     id="validationTooltipUsername"
+                     placeholder="Wpisz nazwę, kuchnię...">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-3">
+        <div ngbDropdown class="d-inline-block" style="width: 100%">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle style="width: 100%">
+            <app-icon icon="sort" style="margin-right: 5px"></app-icon>
+            {{ selectedSort }}
+          </button>
+
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="width: 100%">
+            <button class="dropdown-item" (click)="selectedSort = 'Popularność'" [class.bg-light]="selectedSort === 'Popularność'">
+              <app-icon icon="fire" style="margin-right: 5px"></app-icon> Popularność
+            </button>
+            <button class="dropdown-item" (click)="selectedSort = 'Oceny'" [class.bg-light]="selectedSort === 'Oceny'">
+              <app-icon icon="star" style="margin-right: 3px"></app-icon> Oceny
+            </button>
+            <button class="dropdown-item" (click)="selectedSort = 'Odległość'" [class.bg-light]="selectedSort === 'Odległość'">
+              <app-icon icon="ruler" style="margin-right: 0px"></app-icon> Odległość
+            </button>
+            <button class="dropdown-item" (click)="selectedSort = 'Ceny'" [class.bg-light]="selectedSort === 'Ceny'">
+              <app-icon icon="dollar-sign" style="margin-right: 5px"></app-icon> Ceny
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
